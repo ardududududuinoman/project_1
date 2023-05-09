@@ -188,38 +188,28 @@
   
     const todoText = document.createElement('span')             //만들어진 todoText블록변수에 만들어진 spna 태그의 html을 할당한다
     todoText.innerText = todoInputVal;                          //list태그의 html innerText 에 입력창 입력값을 대입한다.
-    todoList.appendChild(todoText)      
-  
-    const todoRemoveButton = document.createElement('button')   //만들어진 todoButton블록변수에 만들어진 button태그의 html을 할당한다
-    todoRemoveButton.innerText = '❌'                           //방금 만든 버튼의 html에 X를 삽입한다
-    todoRemoveButton.className = 'remove버튼'
-    todoList.appendChild(todoRemoveButton)                          //todoUl안에 아까만든 todoList를 넣는다
-    todoRemoveButton.setAttribute('type', 'button');
-  
-    remove버튼들 = document.querySelectorAll('.remove버튼')
-    console.log(remove버튼들);
-
+    todoList.appendChild(todoText)  
   }
   
-  if (remove버튼들 != undefined) {
-    remove버튼들.addEventListener('click',sayhi)
-  }
+  todoUl.addEventListener('click',listRemove)
 
-  function sayhi(params) {
-    console.log('hi');
-  }
-  // function clickRemoveButton(params) {
-  //   console.log('리무브버튼클릭됨');
-  // }
-  
-  
-  
-  // remove버튼들.forEach(button => {
-  //   button.addEventListener('click',clickRemoveButton)
-  // });
-  
-  
 
+  function listRemove(params) {
+    const target = params.target.parentElement
+    console.log(target);
+    console.log(target.tagName);
+    if (target.tagName == 'UL') {
+      
+    }
+    else{
+      target.remove();
+    }
+
+
+
+
+
+  }
 
 
 
