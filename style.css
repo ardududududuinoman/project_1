@@ -1,0 +1,43 @@
+
+div{
+  padding: 1%;
+  width: 250px;
+  height: auto;
+  display: flex;
+  border-radius: 8px;
+  /* outline: black solid 1px; */
+  justify-content: center;
+  margin: 1%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 1px 2px  rgb(132, 132, 132);
+}
+
+form{
+  display: flex;
+  flex-flow: column;
+  outline: black 1px ;
+}
+.input{
+  width: 200px;
+  height: 20px;
+}
+.hidden{
+  display: none;
+}
+.firstbutton{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#quotes{
+  flex-flow: column;
+  align-items: center;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  /* background-image: url(img/메시씻기는왁두.png); */
+}

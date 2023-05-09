@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+
+
+<div id="chooseDiv" class="choose">
+  <button id="loginButton" class="firstbutton">로그인</button>
+  <button id="joinButton" class="firstbutton">회원가입</button>
+</div>
+
+
+<div id="loginDiv" class="hidden">
+  <form id="loginForm" action="">
+    <h1>LOGIN</h1>
+    <input class="input" required maxlength="15" placeholder="id" type="text" id="inputLoginId">
+    <input class="input" required maxlength="15" placeholder="passward" type="text" id="inputLoginPassword">
+    <button>submit</button>
+  </form>
+</div>
+
+<div id="joinDiv" class="hidden">
+  <form id="joinForm" action="">
+    <h1>JOIN</h1>
+    <input class="input" required maxlength="15" placeholder="id" type="text" id="inputJoinId">
+    <input class="input" required maxlength="15" placeholder="passward" type="text" id="inputJoinPassword">
+    <button>submit</button>
+  </form>
+</div>
+
+
+<div id="clockDiv" class="thisisclock hidden">
+  <h2 id="clock"></h2>
+</div>
+
+
+<div id="quotes" class="hidden">
+  <span>ㅇㅇㅇ</span>
+  <span>우왁굳</span>
+</div>
+
+<div id="todoDiv" class="">
+  <form id="todoForm">
+    <input type="text" placeholder="write your todo" required>
+    <ul id="todoUl"></ul>
+  </form>
+</div>
+
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
